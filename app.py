@@ -9,6 +9,10 @@ from main import shiftgenerator
 from tornado.web import url
 import calendar
 import datetime
+from tornado.options import define, options
+
+define("port", default=8888, help="run on the given port", type=int)
+tornado.options.parse_command_line()
 
 class IndexHandler(tornado.web.RequestHandler):
 
@@ -74,6 +78,6 @@ application = tornado.web.Application([
 )
 
 if __name__ == '__main__':
-    application.listen(8888)
+    application.listen(options.port)
     print("Server listening...")
     tornado.ioloop.IOLoop.instance().start()
