@@ -27,7 +27,6 @@ class IndexHandler(tornado.web.RequestHandler):
 
     def post(self):
 
-        print("indexhandlerのpostで通ってる")
         workernamelist = []
         workertypelist = []
         workerdayofflist = []

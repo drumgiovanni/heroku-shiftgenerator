@@ -67,8 +67,10 @@ footer {
 .calendar {
   width: 220px;
   height: 220px;
-  margin-left: 20px;
+  margin-left: 40px;
   background-color: brown;
-  padding-left:45px;
-  padding-top:30px;
+  padding-left:auto;
+  padding-right:auto;
+  padding-bottom:auto;
+  padding-top:auto;
 }
