@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block title %}シフトが完成しました。{% end %}
+{% block content %}
+  <h1>シフト完成！！</h1>
+  <p>
+    わーいわーい＼(^o^)／
+  </p>
+  <p>
+    下からダウンロードしてね。
+  </p>
+  <a href="{{reverse_url('shift')}}" download="shift" type="button" >ダウンロード</a>
+
+{% end %}

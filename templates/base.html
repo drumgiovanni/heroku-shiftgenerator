@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" name="viewpoint content="width=device-width, initial-scale=1" />
+  <title>{% block title %}{% end %}</title>
+  <link rel="stylesheet" href="{{ static_url('css/style.css')}}"/>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Shift-generatorへようこそ</h1>
+    <p>
+      Shift-generatorを使えば楽に、高速にシフトを組むことができます。
+    </p>
+  </header>
+
+  <div class="main-wrapper">
+    {% block content %}
+
+    {% end %}
+    
+    </div>
+  <footer>
+    <p>
+      giovanni's project
+    </p>
+  </footer>
+  <script src="{{static_url('javascripts/main.js')}}"></script>
+
+</body>
+</html>
