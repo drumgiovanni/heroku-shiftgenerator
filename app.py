@@ -17,7 +17,6 @@ tornado.options.parse_command_line()
 class IndexHandler(tornado.web.RequestHandler):
 
     def get(self):
-        print("getが通りました")
         now = datetime.datetime.now()
         thismonth = now.month
         nextmonth = thismonth + 1
@@ -52,14 +51,12 @@ class IndexHandler(tornado.web.RequestHandler):
             workersinfo["属性"] = workertypelist[i]
             workersinfo["休み希望"] = workerdayofflist[i]
             workerlist[workernamelist[i]] = workersinfo
-        print(workerlist)
         shiftgenerator(workerlist)
         self.render('result.html')
 
 class EndHandler(tornado.web.RequestHandler):
     def get(self):
         ifilename = "Shift.xlsx"
-        print('i download file handler : ',ifilename)
 
         self.set_header ('Content-Type', 'application/vnd.ms-excel')
         self.set_header ('Content-Disposition', 'attachment; filename=shift.xlsx')
@@ -79,5 +76,4 @@ application = tornado.web.Application([
 
 if __name__ == '__main__':
     application.listen(options.port)
-    print("Server listening...")
     tornado.ioloop.IOLoop.instance().start()
