@@ -11,6 +11,7 @@ import calendar
 import datetime
 from tornado.options import define, options
 
+
 define("port", default=8888, help="run on the given port", type=int)
 tornado.options.parse_command_line()
 
@@ -21,7 +22,7 @@ class IndexHandler(tornado.web.RequestHandler):
         thismonth = now.month
         nextmonth = thismonth + 1
         thisyear = now.year
-        pycalendar = calendar.LocaleHTMLCalendar(0).formatmonth(thisyear, nextmonth, withyear=True)
+        pycalendar = calendar.LocaleHTMLCalendar(0, locale='ja').formatmonth(thisyear, nextmonth, withyear=True)
         self.render('index.html',pycalendar = pycalendar )
 
     def post(self):
