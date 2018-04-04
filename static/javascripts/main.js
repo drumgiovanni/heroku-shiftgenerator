@@ -2,12 +2,9 @@ $(function(){
   let workersobj = {}
   $('#trigger').hover(function(){
     $(this).css('position','absolute');
-    $(this).css('top','120px');
-    $(this).css('left','230px');
     $(this).css('z-index','1');
     $(this).animate({'font-size':'80px'}, 'slow');
     $('.main-wrapper').animate({'height':'400px'}, 1500);
-
 
   }, function(){
     $('.workers-info').show(2500);

@@ -4,6 +4,7 @@
 import calendar, datetime, openpyxl
 from openpyxl.styles import Font, PatternFill, Border, Side, Alignment
 
+
 def shiftgenerator(workerlist):
 
     workers = list(workerlist.keys())

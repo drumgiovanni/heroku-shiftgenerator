@@ -2,11 +2,12 @@ body {
   width:100%;
   height:100%;
   font-family:sans-serif;
-  background-color:rgba(80,60,80,0.6);
+  background-color:#27223E ;
+  color: white;
 }
 
 header {
-  background-color: skyblue;
+  background-color: #787471 ;
   width: 100%;
   height: 120px;
 }
@@ -15,7 +16,7 @@ header {
 }
 .main-wrapper h1{
   color:white;
-  text-align: center;
+  margin-left:50%;
 }
 .workers-info {
   margin-left: 40px;
@@ -23,7 +24,7 @@ header {
 }
 
 .content {
-  background-color:yellow;
+  background-color:skyblue;
   padding-top:2px;
   padding-bottom:2px;
   padding-left:6px;
@@ -43,6 +44,7 @@ header {
   background-color:white;
   margin-left: 40px;
   overflow:auto;
+  color:black;
 }
 a {
   margin-top: 8px;
@@ -66,13 +68,18 @@ footer {
   display:none;
 }
 
+table {
+  border-collapse: collapse;
+}
+
+td {
+  border: solid 1px;
+  padding:0.5em;
+}
+th {
+  padding:0.2em;
+}
 .calendar {
-  width: 220px;
-  height: 220px;
-  margin-left: 40px;
-  background-color: brown;
-  padding-left:auto;
-  padding-right:auto;
-  padding-bottom:auto;
-  padding-top:auto;
+  margin-top:40px;
+  width:400px;
 }
