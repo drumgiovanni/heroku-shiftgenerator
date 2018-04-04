@@ -237,9 +237,10 @@ def shiftgenerator(workerlist):
                 fixingp = partworkers[l]
                 for d in fixingset:
                     if num - len(workingdays[partworkers[l]]) >= 2:
-                        if d in workabledays[fixingp]:
-                            workingdays[p].remove(d)
-                            workingdays[fixingp].append(d)
+                        if not d in workingdays[fixingp]:
+                            if d in workabledays[fixingp]:
+                                workingdays[p].remove(d)
+                                workingdays[fixingp].append(d)
 
     p = ""
     num = 0
@@ -263,9 +264,10 @@ def shiftgenerator(workerlist):
 
             for d in fixingset:
                 if num - len(workingdays[fullworkers[l]]) >= 2:
-                    if d in workabledays[fixingp]:
-                        workingdays[p].remove(d)
-                        workingdays[fixingp].append(d)
+                    if d not in workingdays[fixingp]:
+                        if d in workabledays[fixingp]:
+                            workingdays[p].remove(d)
+                            workingdays[fixingp].append(d)
 
 
     wb.create_sheet(index=2, title="workingday")
