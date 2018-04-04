@@ -396,4 +396,14 @@ def shiftgenerator(workerlist):
                     top=Side(style="medium", color="FF000000"),
                     bottom=Side(style="medium", color="FF000000")
                     )
+    noworkingcell = PatternFill(
+        patternType = 'solid',
+        start_color='ff615a5a',
+        end_color='ff615a5a')
+    for days in sheet['2']:
+        if days.value == noWorkingDays[nextmonth]:
+            dcolumn = days.column # 縦がcolumn 横がrow
+            for selected in sheet[dcolumn]:
+                selected.fill = noworkingcell
+
     wb.save('Shift.xlsx')
