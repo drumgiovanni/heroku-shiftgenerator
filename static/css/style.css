@@ -16,7 +16,7 @@ header {
 }
 .main-wrapper h1{
   color:white;
-  margin-left:50%;
+  margin-left:10%;
 }
 .workers-info {
   margin-left: 40px;
@@ -44,31 +44,30 @@ header {
 
   margin-left: 40px;
   margin-top: 370px;
-  overflow:auto;
+
   color:black;
   float:left;
 }
 
 #person-list{
   background-color: white;
+  overflow:auto;
 }
-a {
-  margin-top: 8px;
-  padding-bottom:8px;
-  background-color:yellow;
+.btn a {
+  color:white;
 }
 
 footer {
   position:absolute;
-  margin-top:1200px;
-
+  margin-top:700px;
+  z-index: 2;
   width:100%;
   background-color:lightgreen;
   display:block;
 }
 #add-worker {
   display:none;
-  margin-left: 66%;
+  margin-left: 60%;
 }
 #hidden-inputs {
   display:none;
@@ -142,4 +141,55 @@ margin-top:24px;
   border-bottom: none;
   -webkit-transform: translateY(6px);　/*下移動*/
   transform: translateY(6px);
+}
+
+.btn {
+  position: relative;
+  color: white;
+  width: 256px;
+  height: 64px;
+  text-align: center;
+  line-height: 64px;
+  transition: all 0.3s;
+  span {
+    transition: all 0.3s;
+    tranform: scale(1, 1);
+  }
+}
+.btn-two::before, .btn-two::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+	height: 100%;
+  bottom: 0;
+	left: 0;
+	z-index: 1;
+  transition: all 0.3s;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.btn-two:hover::after {
+  animation-name: rotatecw;
+  animation-duration: 2s;
+}
+.btn-two:hover::before {
+  animation-name: rotateccw;
+  animation-duration: 3s;
+}
+.btn-two:hover::after, .btn-two:hover::before {
+  left: 96px;
+  width: 64px;
+
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes rotatecw {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}
+
+@keyframes rotateccw {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(-360deg);}
 }
