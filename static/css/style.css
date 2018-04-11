@@ -41,18 +41,25 @@ header {
   display:none;
   height:300px;
   width:400px;
-
   margin-left: 40px;
   margin-top: 370px;
-
   color:black;
   float:left;
 }
-
 #person-list{
   background-color: white;
-  overflow:auto;
 }
+#add-worker {
+  display:none;
+  margin-left: 59%;
+  margin-top:5px;
+}
+.box {
+  overflow:auto;
+  height:280px;
+  width:400px;
+}
+
 .btn a {
   color:white;
   position:absolute;
@@ -67,10 +74,7 @@ footer {
   background-color:lightgreen;
   display:block;
 }
-#add-worker {
-  display:none;
-  margin-left: 60%;
-}
+
 #hidden-inputs {
   display:none;
 }
