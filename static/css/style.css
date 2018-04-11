@@ -55,6 +55,8 @@ header {
 }
 .btn a {
   color:white;
+  position:absolute;
+  z-index:2;
 }
 
 footer {
