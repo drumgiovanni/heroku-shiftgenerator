@@ -2,9 +2,9 @@ $(function(){
   let workersobj = {}
   $('#trigger').click(function(){
     $('.main-wrapper').animate({'height':'400px'}, 1500);
-    $('#readme').fadeOut(1500);
+    $('#readme').fadeOut(1000);
+    $(this).delay(200).fadeOut('slow');
     $('.workers-info').delay(500).show(2500);
-    $(this).delay(500).fadeOut('slow');
   });
 
 $('#register').click(function(){
