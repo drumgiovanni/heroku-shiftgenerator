@@ -47,7 +47,7 @@
 1. 「ダウンロード」をクリック  
         好きな場所に生成されたエクセルシートを保存できます。  
 
-  
+
 ここまでの流れを動画にするとこんな感じ⬇︎
 
 ![再現映像](https://github.com/drumgiovanni/heroku-shiftgenerator/blob/master/others/mv1.gif)
@@ -73,6 +73,8 @@
 
 "workingday"というタブでは、従業員の出勤日が○・×で表示されています。  
  好きに使ってください。  
+
+![エクセル動画](https://github.com/drumgiovanni/heroku-shiftgenerator/blob/master/others/mv2.gif)
 
 なお、ダウンロードしたエクセルファイルは好きに編集していただいて大丈夫です。  
 手入力でシフトの微調整等の柔軟に対応していただければと思います。  
