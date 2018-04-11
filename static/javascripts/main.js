@@ -1,14 +1,10 @@
 $(function(){
   let workersobj = {}
-  $('#trigger').hover(function(){
-    $(this).css('position','absolute');
-    $(this).css('z-index','1');
-    $(this).animate({'font-size':'80px'}, 'slow');
+  $('#trigger').click(function(){
     $('.main-wrapper').animate({'height':'400px'}, 1500);
-
-  }, function(){
-    $('.workers-info').show(2500);
-    $(this).fadeOut('slow');
+    $('#readme').fadeOut(1500);
+    $('.workers-info').delay(500).show(2500);
+    $(this).delay(500).fadeOut('slow');
   });
 
 $('#register').click(function(){

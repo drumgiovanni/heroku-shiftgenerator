@@ -21,6 +21,7 @@ header {
 .workers-info {
   margin-left: 40px;
   display:none;
+  float:left;
 }
 
 .content {
@@ -37,14 +38,15 @@ header {
 }
 
 .show-worker {
-  display:block;
   display:none;
   height:300px;
   width:400px;
   background-color:white;
   margin-left: 40px;
+  margin-top: 360px;
   overflow:auto;
   color:black;
+  float:left;
 }
 a {
   margin-top: 8px;
@@ -82,4 +84,56 @@ th {
 .calendar {
   margin-top:40px;
   width:400px;
+}
+.top-buttons {
+float:left;
+}
+
+#trigger {
+  margin-right:40px;
+  display:block;
+  float:left;
+   width: 250px;
+   height:70px;
+   line-height: 70px;
+   color: #FFF;
+   text-decoration: none;
+   text-align: center;
+   background-color: #f39800; /*ボタン色*/
+   border-bottom: solid 6px #ec6c00; /*下線色*/
+   border-radius: 5px; /*角丸*/}
+#trigger:hover{
+        background-color: #f9c500; /*ボタン色*/
+        border-bottom: solid 6px #f39800; /*下線色*/
+}
+#trigger:active{
+  margin-top: 6px;
+  border-bottom: none;
+  -webkit-transform: translateY(6px);　/*下移動*/
+  transform: translateY(6px);
+}
+
+
+ #readme {
+   display:block;
+   float:left;
+        width: 250px;
+        height:70px;
+        line-height: 70px;
+        color: #FFF;
+        text-decoration: none;
+        text-align: center;
+        background-color: #f39800; /*ボタン色*/
+        border-bottom: solid 6px #ec6c00; /*下線色*/
+        border-radius: 5px; /*角丸*/
+ }
+#readme:hover{
+  background-color: #f9c500;/*ボタン色*/
+  border-bottom: solid 6px #f39800; /*下線色*/
+}
+#readme:active{
+  margin-top: 6px;
+  border-bottom: none;
+  -webkit-transform: translateY(6px);　/*下移動*/
+  transform: translateY(6px);
 }
