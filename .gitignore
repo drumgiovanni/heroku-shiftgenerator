@@ -1,4 +1,4 @@
 __pycache__
-.xlsx
+*.xlsx
 .ropeproject
 .DS_Store
