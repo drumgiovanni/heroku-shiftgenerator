@@ -3,10 +3,10 @@
 {% block content %}
   <div class="top-buttons">
 
-  
+
 
   <a id="trigger">始めよう</a>
-  <a id="readme">使い方</a>
+  <a id="readme" href="https://github.com/drumgiovanni/heroku-shiftgenerator">使い方</a>
   </div>
   <div class="workers-info">
     <div class="calendar">
@@ -41,16 +41,18 @@
 
 
   <div class="show-worker">
-    <p>
-      登録されている従業員情報
-    </p>
+
     <div id="person-list">
+      <p>
+        登録されている従業員情報
+      </p>
     </div>
-  </div>
+
   <form action="/" method="post">
     <div id="hidden-inputs">
 
     </div>
     <input type="submit" id="add-worker" value="従業員の登録を完了する" />
   </form>
+  </div>
 {% end %}

@@ -4,7 +4,7 @@ $(function(){
     $('.main-wrapper').animate({'height':'400px'}, 1500);
     $('#readme').fadeOut(1000);
     $(this).delay(200).fadeOut('slow');
-    $('.workers-info').delay(500).show(2500);
+    $('.workers-info').delay(550).show(2500);
   });
 
 $('#register').click(function(){
@@ -26,8 +26,8 @@ $('#register').click(function(){
   $('#worker-dayoff').val('')
   $('.show-worker').show();
   $('#person-list').append(`<ul> <li>名前：${name}</li> </ul>`);
-  $('#person-list').append(`<p>    属性：${type}</p>`);
-  $('#person-list').append(`<p>    休み希望：${dayoff}</p>`);
+  $('#person-list').append(`<p>   属性：${type}</p>`);
+  $('#person-list').append(`<p>   休み希望：${dayoff}</p>`);
   $('#add-worker').css('display','block')
   $('#hidden-inputs').append(`<input type="text" name="worker-name" value="${name}" size="20"/>`);
   $('#hidden-inputs').append(`<input type="text" name="worker-type" value="${type}" />`);
