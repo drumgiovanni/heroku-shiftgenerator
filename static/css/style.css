@@ -210,13 +210,23 @@ margin-left:60px;
     margin-top:40px;
     font-size:24px;
   }
-
+  .workers-info {
+    display:none;
+  }
+  .content {
+    background-color:skyblue;
+    padding-top:2px;
+    padding-bottom:2px;
+    padding-left:6px;
+    margin-top:3px;
+    margin-bottom:3px;
+    width: 90%;
+  }
   .show-worker {
     display:none;
     height:300px;
     width:400px;
     margin-left: 40px;
-    margin-top: 370px;
     color:black;
   }
 
