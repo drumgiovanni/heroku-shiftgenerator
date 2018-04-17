@@ -55,6 +55,7 @@ def shiftgenerator(workerlist):
     for i in range(0, 6):                                   # 土曜と日祝をリストに突っ込む
         if (sat + 7 * i) <= b and (sat + 7 * i) not in satlist:
             satlist.append(sat + 7 * i)
+            satlist = list(set(satlist) - set(holydaylist))
             satlist.sort()
         if (sun + 7 * i) <= b:
             holydaylist.append(sun + 7 * i)
