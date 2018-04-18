@@ -346,7 +346,17 @@ def shiftgenerator(workerlist):
             row = worker.row
             for day in sh2[row]:
                 if day.value == "○":
-                    shiftlist.append(counter)
+                    thiscolumn = day.column.upper()
+                    valuelist = []
+                    marker = "A"
+                    for cel in sheet[str(thiscolumn)]:
+                        valuelist.append(cel.value)
+                    if valuelist[1] in holydaylist:
+                        shiftlist.append("出")
+                        marker = "B"
+                    valuelist.pop(1)
+                    if marker == "A":
+                        shiftlist.append(counter)
                     if counter == 1:
                         counter = 2
                     else:
